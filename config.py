@@ -14,7 +14,7 @@ auto_offset = True
 hour_offset = 0
 
 # Path to the output file
-output_file = os.path.join(appdirs.user_cache_dir(appname="himawaripy",
+output_file = os.path.join(appdirs.user_cache_dir(appname="earth",
                                                   appauthor=False),
                            "latest.png")
 

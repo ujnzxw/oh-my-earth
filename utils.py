@@ -2,7 +2,7 @@ import os
 import sys
 import subprocess
 
-from .config import xfce_displays
+from config import xfce_displays
 
 
 def set_background(file_path):
