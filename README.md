@@ -20,11 +20,11 @@ This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boram
 
     # Set oh-my-earth to be called periodically
 
-        ## Either set up a cronjob
-            crontab -e
+    - Set up a cronjob
+    crontab -e
 
-            ### Add the line:
-            */10 * * * * <INSTALLATION_PATH>
+     - Add the line:
+     */10 * * * * <INSTALLATION_PATH>
 
 ## Uninstallation
     # Remove the cronjob
