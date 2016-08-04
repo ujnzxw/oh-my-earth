@@ -23,7 +23,7 @@ This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boram
     - Set up a cronjob
     crontab -e
 
-     - Add the line:
+    - Add the line:
      */10 * * * * <INSTALLATION_PATH>
 
 ## Uninstallation
