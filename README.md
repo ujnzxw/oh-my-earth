@@ -5,26 +5,18 @@ This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boram
 
 ## Installation
 
-    ```
     cd ~  <OR OTHER PATH YOU WANT>
     git clone https://github.com/ujnzxw/oh-my-earth.git
-    ```
 
     # configure
-    ```
     cd ~/oh-my-earth/
     vi config.py
-    ```
 
     # install
-    ```
     sudo bash install.sh
-    ```
 
     # test whether it's working
-    ```
     oh-my-earth
-    ```
 
     # Set oh-my-earth to be called periodically
 
@@ -41,8 +33,9 @@ This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boram
     */10 * * * * <INSTALLATION_PATH>
 
     # Remove the data directory
-    # By default, `~/.himawari`. Check `output_file` variable in config.py
-    # in case you've changed it.
+     rm -rf ~/oh-my-earth  <OR OTHER PATH YOU INSTALLED>
+
+    # Remove the soft link
     rm -rf /usr/local/bin/oh-my-earth
 
 ## Attributions
