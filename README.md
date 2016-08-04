@@ -1,5 +1,5 @@
 # oh-my-earth
-*Put near-realtime picture of Earth as your desktop background*
+*Put near-realtime picture of Earth as your Wallpaper*
 
 This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boramalper/himawaripy)
 
