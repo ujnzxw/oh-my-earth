@@ -6,10 +6,9 @@ from itertools import product
 from json import loads
 from multiprocessing import Pool, cpu_count, Value
 from os import makedirs
-from os.path import dirname
-import os
+from os import path
 from time import strptime, strftime, mktime
-import urllib, urllib2
+import os, urllib, urllib2
 
 from PIL import Image
 from pytz import timezone
@@ -93,8 +92,8 @@ def main():
         png.paste(tile, (width * x, height * y, width * (x + 1), height * (y + 1)))
 
     print("\nSaving to '%s'..." % (output_file))
-    if not os.path.exists(dirname(output_file)):
-        os.makedirs(dirname(output_file))
+    if not os.path.exists(os.path.dirname(output_file)):
+        os.makedirs(os.path.dirname(output_file))
     png.save(output_file, "PNG")
 
     if not set_background(output_file):
