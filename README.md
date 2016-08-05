@@ -54,3 +54,6 @@ This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boram
 ## Attributions
 This Script come from the python3 version:
 [boramalper/himawaripy](https://github.com/boramalper/himawaripy)
+
+---
+[MIT License](LICENSE)
