@@ -12,6 +12,7 @@ def set_background(file_path):
         # Because of a bug and stupid design of gsettings, see http://askubuntu.com/a/418521/388226
         if de == "unity":
             subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "draw-background", "false"])
+
         subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "picture-uri", "file://" + file_path])
         subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "picture-options", "scaled"])
         subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "primary-color", "FFFFFF"])
