@@ -6,6 +6,7 @@ This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boram
 ## Example
 
 ![Picture 1. oh-my-earth Wallpaper Example 1](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-1.png)
+![Picture 2. oh-my-earth Wallpaper Example 2](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-2.png)
 
 ## Installation
 
