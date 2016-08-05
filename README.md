@@ -2,12 +2,10 @@
 
 *Put near-realtime picture of Earth as your Wallpaper*
 
-This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boramalper/himawaripy)
-
 **oh-my-earth** differs in that:
 
-* It doesn't install python3 and extra python packages
-* The installation is very easy
+* It doesn't install python3 and extra python packages, python2.7 is enough
+* The installation procedure is simplify
 * More easier to customization by yourself
 
 
