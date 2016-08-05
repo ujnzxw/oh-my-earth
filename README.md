@@ -1,7 +1,15 @@
 # oh-my-earth
+
 *Put near-realtime picture of Earth as your Wallpaper*
 
 This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boramalper/himawaripy)
+
+**oh-my-earth** differs in that:
+
+* It doesn't install python3 and extra python packages
+* The installation is very easy
+* More easier to customization by yourself
+
 
 ## Example
 
@@ -13,14 +21,14 @@ This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boram
     cd ~  <OR OTHER PATH YOU WANT>
     git clone https://github.com/ujnzxw/oh-my-earth.git
 
-    # configure
+    # Configure
     cd ~/oh-my-earth/
     vi config.py
 
-    # install
+    # Install
     sudo bash install.sh
 
-    # test whether it's working
+    # Test whether it's working
     oh-my-earth
 
     # Set oh-my-earth to be called periodically
