@@ -3,6 +3,10 @@
 
 This is a python 2.7 version of [boramalper/himawaripy](https://github.com/boramalper/himawaripy)
 
+## Example
+
+![Picture 1. oh-my-earth Wallpaper Example 1](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-1.png)
+
 ## Installation
 
     cd ~  <OR OTHER PATH YOU WANT>
