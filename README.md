@@ -11,7 +11,7 @@
 
 ## Example
 
-![Picture 1. oh-my-earth Wallpaper Example 1](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-1.png)
+![Picture 1. oh-my-earth Wallpaper Example 3](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-3.png)
 ![Picture 2. oh-my-earth Wallpaper Example 2](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-2.png)
 
 ## Installation
