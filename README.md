@@ -41,7 +41,8 @@ You can configure the level of detail, by modifying the script. You can set the 
 
 ### xfce4
 
-On xfce4, you can set which displays you want to change the background of using the xfce displays variable. If you get an error and you're not sure whichdisplay to use, you can find your display in the output of
+On xfce4, you can set which displays you want to change the background of using the xfce displays variable. If you get an error and you're not sure which display to use, you can find your display in the output of:
+
     xfconf-query --channel xfce4-desktop --list | grep last-image
 
 ### Nitrogen
