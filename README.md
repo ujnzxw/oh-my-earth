@@ -1,6 +1,11 @@
 # oh-my-earth
 
-*Put near-realtime picture of Earth as your Wallpaper*
+Put near-realtime picture of Earth as your Wallpaper
+----------------------------------------------------
+
+- oh-my-earth is a Python 2.7 Script that fetches near-realtime picture of Earth as your Wallpaper
+- The picture is taken by [Himawari 8 (向日葵8号)](https://en.wikipedia.org/wiki/Himawari_8)
+- The web site of [Himawari 8](http://himawari8.nict.go.jp/)
 
 **oh-my-earth** differs in that:
 
@@ -12,7 +17,42 @@
 ## Example
 
 ![Picture 1. oh-my-earth Wallpaper Example 3](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-3.png)
+![Picture 4. oh-my-earth Wallpaper Example 4](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-4.png)
 ![Picture 2. oh-my-earth Wallpaper Example 2](https://github.com/ujnzxw/picture/blob/master/oh-my-earth-example-2.png)
+
+##Supported Desktop Environments
+
+Tested
+-----
+* Unity 7
+* Mate 1.8.1
+* Pantheon
+* LXDE
+* OS X
+
+Not Tested
+----------
+* GNOME 3
+* KDE
+
+## Configuration
+You can configure the level of detail, by modifying the script. You can set the global variable `level` to `4`, `8`, `16`, or `20` to increase the quality (and thus the file size as well). Please keep in mind that it will also take more time to download the tiles.
+
+
+### xfce4
+
+On xfce4, you can set which displays you want to change the background of using the xfce displays variable. If you get an error and you're not sure whichdisplay to use, you can find your display in the output of
+    xfconf-query --channel xfce4-desktop --list | grep last-image
+
+### Nitrogen
+  If you use nitrogen for setting your wallpaper, you have to enter this in your `~/.config/nitrogen/bg-saved.cfg`.
+
+    [:0.0]
+    file=/home/USERNAME/.cache/ujnzxw/latest.png
+    mode=4
+    bgcolor=#000000
+
+
 
 ## Installation
 
