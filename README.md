@@ -9,7 +9,7 @@ Put near-realtime picture of Earth as your Wallpaper
 
 **oh-my-earth** differs in that:
 
-* It doesn't install python3 and extra python packages, python2.7 is enough
+* It doesn't install python3 and extra python packages, python2.7 is enough and is default version for most OS
 * The installation procedure is simplify
 * More easier to customization by yourself
 
@@ -56,41 +56,44 @@ On xfce4, you can set which displays you want to change the background of using 
 
 
 ## Installation
-    [Please install PIL package first](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/00140767171357714f87a053a824ffd811d98a83b58ec13000)
 
+[Please install PIL package first](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/00140767171357714f87a053a824ffd811d98a83b58ec13000)
 
-    cd ~  <OR OTHER PATH YOU WANT>
-    git clone https://github.com/ujnzxw/oh-my-earth.git
+```
+cd ~  <OR OTHER PATH YOU WANT>
+git clone https://github.com/ujnzxw/oh-my-earth.git
 
-    # Configure
-    cd ~/oh-my-earth/
-    vi config.py
+# Configure
+cd ~/oh-my-earth/
+vi config.py
 
-    # Install
-    sudo bash install.sh
+# Install
+sudo bash install.sh
 
-    # Test whether it's working
-    oh-my-earth
+# Test whether it's working
+oh-my-earth
 
-    # Set oh-my-earth to be called periodically
+# Set oh-my-earth to be called periodically
 
-    - Set up a cronjob
-    crontab -e
+- Set up a cronjob
+crontab -e
 
-    - Add the line:
-     */10 * * * * <INSTALLATION_PATH>
-
+- Add the line:
+ */10 * * * * <INSTALLATION_PATH>
+```
 ## Uninstallation
-    # Remove the cronjob
-    crontab -e
-    # Remove the line
-    */10 * * * * <INSTALLATION_PATH>
+```
+# Remove the cronjob
+crontab -e
+# Remove the line
+*/10 * * * * <INSTALLATION_PATH>
 
-    # Remove the data directory
-     rm -rf ~/oh-my-earth  <OR OTHER PATH YOU INSTALLED>
+# Remove the data directory
+ rm -rf ~/oh-my-earth  <OR OTHER PATH YOU INSTALLED>
 
-    # Remove the soft link
-    rm -rf /usr/local/bin/oh-my-earth
+# Remove the soft link
+rm -rf /usr/local/bin/oh-my-earth
+```
 
 ## Reference
 [boramalper/himawaripy](https://github.com/boramalper/himawaripy)
@@ -98,4 +101,4 @@ On xfce4, you can set which displays you want to change the background of using 
 [PIL HandBook](http://effbot.org/imagingbook/)
 
 ---
-[MIT License](LICENSE)
+[MIT License](LICENSE.md) © 2016 Steven ZHAO
