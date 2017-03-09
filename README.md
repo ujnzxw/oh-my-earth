@@ -98,7 +98,9 @@ rm -rf /usr/local/bin/oh-my-earth
 ## Reference
 
 [boramalper/himawaripy](https://github.com/boramalper/himawaripy)
+
 [PIL Download](http://www.pythonware.com/products/pil/index.htm)
+
 [PIL HandBook](http://effbot.org/imagingbook/)
 
 ---
