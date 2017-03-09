@@ -51,12 +51,10 @@ def download_chunk(args):
     latest - requested time
     '''
     x, y, latest = args
-    print args
     url_format = "http://himawari8.nict.go.jp/img/D531106/{}d/{}/{}_{}_{}.png"
     url        = url_format.format(level,
                                    width,
                                    strftime("%Y/%m/%d/%H%M%S", latest), x, y)
-    print url
     tile_w = urllib2.urlopen(url)
     tiledata = tile_w.read()
 
