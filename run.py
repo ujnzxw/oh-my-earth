@@ -25,7 +25,7 @@ width = 550
 def get_time_offset(latest_date):
     if auto_offset:
         local_date = datetime.now(timezone(str(get_localzone())))
-        himawari_date = datetime.now(timezone('Australia/Sydney'))
+        himawari_date = datetime.now(timezone('Asia/Shanghai'))
         local_offset = local_date.strftime("%z")
         himawari_offset = himawari_date.strftime("%z")
 
