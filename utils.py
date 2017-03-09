@@ -62,8 +62,7 @@ def get_desktop_environment():
         return "windows"
     elif sys.platform == "darwin":
         return "mac"
-    ''' Most likely either a POSIX system or something not much common '''
-    else:
+    else: # Most likely either a POSIX system or something not much common
         desktop_session = os.environ.get("DESKTOP_SESSION")
         ''' Easier to match if we don't have to deal with caracter cases '''
         if desktop_session is not None:
@@ -78,7 +77,7 @@ def get_desktop_environment():
             Canonical sets $DESKTOP_SESSION to Lubuntu rather than LXDE if using LXDE.
             There is no guarantee that they will not do the same with the other desktop environments.
             '''
-            elif "xfce" in desktop_session or desktop_session.startswith("xubuntu"):
+            if "xfce" in desktop_session or desktop_session.startswith("xubuntu"):
                 return "xfce4"
             elif desktop_session.startswith("ubuntu"):
                 return "unity"
@@ -95,7 +94,6 @@ def get_desktop_environment():
         elif os.environ.get('GNOME_DESKTOP_SESSION_ID'):
             if "deprecated" not in os.environ.get('GNOME_DESKTOP_SESSION_ID'):
                 return "gnome2"
-        ''' From http://ubuntuforums.org/showthread.php?t=652320 '''
         elif is_running("xfce-mcs-manage"):
             return "xfce4"
         elif is_running("ksmserver"):
@@ -107,8 +105,6 @@ def get_desktop_environment():
         current_desktop = current_desktop.lower()
         if current_desktop in ["gnome", "unity", "kde", "gnome-classic", "mate"]:
             return current_desktop
-
-        ''' Special Cases '''
         elif current_desktop == "xfce":
             return "xfce4"
         elif current_desktop == "x-cinnamon":
