@@ -56,6 +56,8 @@ On xfce4, you can set which displays you want to change the background of using 
 
 
 ## Installation
+    [Please install PIL package first](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/00140767171357714f87a053a824ffd811d98a83b58ec13000)
+
 
     cd ~  <OR OTHER PATH YOU WANT>
     git clone https://github.com/ujnzxw/oh-my-earth.git
@@ -90,9 +92,10 @@ On xfce4, you can set which displays you want to change the background of using 
     # Remove the soft link
     rm -rf /usr/local/bin/oh-my-earth
 
-## Attributions
-This Script come from the python3 version:
+## Reference
 [boramalper/himawaripy](https://github.com/boramalper/himawaripy)
+[PIL Download](http://www.pythonware.com/products/pil/index.htm)
+[PIL HandBook](http://effbot.org/imagingbook/)
 
 ---
 [MIT License](LICENSE)
