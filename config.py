@@ -20,11 +20,12 @@ put the realtime picture of Earth.
 auto_offset = True
 hour_offset = 0
 
-# Path to the output file
-output_file = os.path.join(appdirs.user_cache_dir(appname="earth",
+''' get the output file '''
+output_file = os.path.join(appdirs.user_cache_dir(appname="oh-my-earth",
                                                   appauthor=False),
                            "latest.png")
 
-# Xfce4 displays to change the background of
+
+''' Xfce4 displays to change the background of '''
 xfce_displays = ["/backdrop/screen0/monitor0/image-path",
                  "/backdrop/screen0/monitor0/workspace0/last-image"]
