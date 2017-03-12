@@ -1,3 +1,7 @@
+#-*- coding: utf-8 -*-
+'''
+@author ujnzxw <ujnzxw@gmail.com>
+'''
 import os.path
 import appdirs
 

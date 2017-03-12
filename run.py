@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+#-*- coding: utf-8 -*-
+'''
+@author ujnzxw <ujnzxw@gmail.com>
+'''
+
 import os, urllib, urllib2
 import multiprocessing
 
@@ -43,19 +48,20 @@ def get_time_offset(latest_date):
     return offset_time
 
 def download_chunk(args):
-    global counter
-
     '''
+    download a picture section from website
     x      - coordinate x
     y      - coordinate y
     latest - requested time
     '''
+
+    global counter
     x, y, latest = args
     url_format = "http://himawari8.nict.go.jp/img/D531106/{}d/{}/{}_{}_{}.png"
     url        = url_format.format(level,
                                    width,
                                    strftime("%Y/%m/%d/%H%M%S", latest), x, y)
-    tile_w = urllib2.urlopen(url)
+    tile_w   = urllib2.urlopen(url)
     tiledata = tile_w.read()
 
     with counter.get_lock():
@@ -65,6 +71,10 @@ def download_chunk(args):
 
 
 def main():
+    '''
+    main function
+    '''
+
     global counter
 
     ''' check if setting data is correct or not '''
@@ -92,7 +102,6 @@ def main():
     print
 
     ''' use Python Imaging Library (PIL) to generate png '''
-
     png = Image.new('RGB', (width * level, height * level))
 
     counter = multiprocessing.Value("i", 0)
@@ -104,7 +113,6 @@ def main():
         tile = Image.open(BytesIO(tiledata))
         png.paste(tile, (width * x, height * y, width * (x + 1), height * (y + 1)))
 
-    #png.thumbnail((440,440))
     print("\nSaving to '%s'..." % (output_file))
     if not os.path.exists(os.path.dirname(output_file)):
         os.makedirs(os.path.dirname(output_file))
