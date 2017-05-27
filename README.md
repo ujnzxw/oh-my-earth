@@ -104,4 +104,4 @@ rm -rf /usr/local/bin/oh-my-earth
 [PIL HandBook](http://effbot.org/imagingbook/)
 
 ---
-[MIT License](LICENSE.md) © 2016 Steven ZHAO
+[MIT License](LICENSE.md) © 2017 Steven ZHAO
