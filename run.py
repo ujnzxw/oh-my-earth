@@ -89,7 +89,12 @@ def main():
 
     ''' get latest updating time '''
     url = 'http://himawari8-dl.nict.go.jp/himawari8/img/D531106/latest.json'
-    latest_json =  urllib2.urlopen(url)
+    latest_json=None
+    try:
+        latest_json =  urllib2.urlopen(url)
+    except urllib2.URLError:
+        print('ERROR: Site himawari8-dl.nict.go.jp cannot be reached')
+
     latest = strptime(loads(latest_json.read().decode("utf-8"))["date"], "%Y-%m-%d %H:%M:%S")
     print("Latest version: {} GMT".format(strftime("%Y/%m/%d %H:%M:%S", latest)))
 
