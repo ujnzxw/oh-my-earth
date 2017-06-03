@@ -57,7 +57,16 @@ On xfce4, you can set which displays you want to change the background of using 
 
 ## Installation
 
+
+#### Pre-install
 [Please install PIL package first](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/00140767171357714f87a053a824ffd811d98a83b58ec13000)
+
+Others:
+
+sudo easy_install image
+sudo easy_install pytz
+sudo easy_install tzlocal
+sudo easy_install appdirs
 
 ```
 cd ~  <OR OTHER PATH YOU WANT>
