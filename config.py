@@ -25,9 +25,19 @@ auto_offset = True
 hour_offset = 0
 
 ''' get the output file '''
-output_file = os.path.join(appdirs.user_cache_dir(appname="oh-my-earth",
+# earth output file
+earth_output_file = os.path.join(appdirs.user_cache_dir(appname="oh-my-earth",
                                                   appauthor=False),
-                           "latest.png")
+                           "earth.latest.png")
+# bing.com output file
+bing_output_file = os.path.join(appdirs.user_cache_dir(appname="oh-my-earth",
+                                                  appauthor=False),
+                           "bing.random.jpg")
+
+# momentumdash.com output file
+momentumdash_output_file = os.path.join(appdirs.user_cache_dir(appname="oh-my-earth",
+                                                  appauthor=False),
+                           "momentumdash.random.jpg")
 
 
 ''' Xfce4 displays to change the background of '''

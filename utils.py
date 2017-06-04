@@ -5,7 +5,7 @@ import subprocess
 from config import xfce_displays
 
 
-def set_background(file_path):
+def set_background(file_path, picture_option):
     '''
     set desktop background
     '''
@@ -17,8 +17,10 @@ def set_background(file_path):
             subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "draw-background", "false"])
 
         subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "picture-uri", "file://" + file_path])
-        subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "picture-options", "scaled"])
+        subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "picture-options", picture_option])
         subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "primary-color", "FFFFFF"])
+        if de == "unity":
+            subprocess.call(["gsettings", "set", "org.gnome.desktop.background", "draw-background", "true"])
     elif de == "mate":
         subprocess.call(["gsettings", "set", "org.mate.background", "picture-filename", file_path])
     elif de == 'i3':

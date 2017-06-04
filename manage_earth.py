@@ -18,7 +18,7 @@ from time      import strptime, strftime, mktime
 from PIL       import Image
 from pytz      import timezone
 from tzlocal   import get_localzone
-from config    import level, output_file, auto_offset, hour_offset
+from config    import level, earth_output_file, auto_offset, hour_offset
 from utils     import set_background, get_desktop_environment
 
 counter = None
@@ -130,12 +130,12 @@ class EarthManager():
             tile = Image.open(BytesIO(tiledata))
             png.paste(tile, (width * x, height * y, width * (x + 1), height * (y + 1)))
 
-        print("\nSaving to '%s'..." % (output_file))
-        if not os.path.exists(os.path.dirname(output_file)):
-            os.makedirs(os.path.dirname(output_file))
-        png.save(output_file, "PNG")
+        print("\nSaving to '%s'..." % (earth_output_file))
+        if not os.path.exists(os.path.dirname(earth_output_file)):
+            os.makedirs(os.path.dirname(earth_output_file))
+        png.save(earth_output_file, "PNG")
 
-        if not set_background(output_file):
+        if not set_background(earth_output_file, "scaled"):
             exit("Your desktop environment '{}' is not supported.".format(get_desktop_environment()))
 
         print("Done!")
