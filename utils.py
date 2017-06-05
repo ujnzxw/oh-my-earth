@@ -8,6 +8,7 @@ from config import xfce_displays
 def set_background(file_path, picture_option):
     '''
     set desktop background
+    picture_option: scaled, wallpaper, stretched, spanned
     '''
     de = get_desktop_environment()
 

@@ -43,7 +43,7 @@ class MomentumdashManager():
 
         ''' get background picture from momentumdash.com '''
 
-        print("Updating...")
+        print("Updating momentumdash image...")
 
         self.get_bg_picture()
 

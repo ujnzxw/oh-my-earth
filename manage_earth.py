@@ -93,7 +93,7 @@ class EarthManager():
 
         ''' start to download picture '''
 
-        print("Updating...")
+        print("Updating earth image...")
 
         ''' get latest updating time '''
         url = 'http://himawari8-dl.nict.go.jp/himawari8/img/D531106/latest.json'
