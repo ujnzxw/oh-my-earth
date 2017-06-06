@@ -19,7 +19,6 @@ def main():
 
     if display_model == "random":
         index = random.randint(0, len(obj_list)-1)
-        print index
         obj_list[index]().run()
 
     elif display_model == "earth":
