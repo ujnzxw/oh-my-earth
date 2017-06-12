@@ -50,7 +50,8 @@ class MomentumdashManager():
         print("\nSaving to '%s'..." % (momentumdash_output_file))
 
         ''' set background picture as wallpaper '''
-        if not set_background(momentumdash_output_file, "wallpaper"):
+        ''' scaled, wallpaper, stretched, spanned '''
+        if not set_background(momentumdash_output_file, "stretched"):
             exit("Your desktop environment '{}' is not supported.".format(get_desktop_environment()))
 
         print("Done!")
